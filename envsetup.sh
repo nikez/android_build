@@ -54,8 +54,8 @@ function check_product()
         return
     fi
 
-    if (echo -n $1 | grep -q -e "^ev_") ; then
-        EV_BUILD=$(echo -n $1 | sed -e 's/^ev_//g')
+    if (echo -n $1 | grep -q -e "^lente_") ; then
+        EV_BUILD=$(echo -n $1 | sed -e 's/^lente_//g')
     else
         EV_BUILD=
     fi
